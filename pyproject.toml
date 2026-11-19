@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlflow-workspace-plugin"
+version = "0.1.0"
+dependencies = ["mlflow"]
+
+[project.entry-points."mlflow.request_header_provider"]
+workspace = "plugin:WorkspaceHeaderProvider"
